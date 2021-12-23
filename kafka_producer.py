@@ -1,5 +1,5 @@
 from kafka import KafkaProducer
-import json
+from json import dumps
 
 TOPIC_NAME = 'orders'
 KAFKA_SERVER = 'localhost:9092'
