@@ -1,9 +1,9 @@
-from kafka import KafaProducer
+from kafka import KafkaProducer
 
 TOPIC_NAME = 'orders'
 KAFKA_SERVER = 'localhost:9092'
 
-producer = KakfaProducer(bootstrap_servers=KAFKA_SERVER)
+producer = KafkaProducer(bootstrap_servers=KAFKA_SERVER)
 
 order_info = '{"person_id":"5", "latitude":"90", "longitude":"100"}'
 
