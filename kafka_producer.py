@@ -1,4 +1,4 @@
-from kafka import KakfaProducer
+from kafka import KafaProducer
 
 TOPIC_NAME = 'orders'
 KAFKA_SERVER = 'localhost:9092'
