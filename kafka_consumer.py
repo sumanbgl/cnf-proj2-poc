@@ -1,8 +1,8 @@
-from kafka import KakfaConsumer
+from kafka import KafkaConsumer
 
-TOPIC_NAME = 'orders'
 
-consumer = KakfaConsumer(TOPIC_NAME)
+TOPIC_NAME = 'items'
 
+consumer = KafkaConsumer(TOPIC_NAME)
 for message in consumer:
-    print(message)
+    print (message)
