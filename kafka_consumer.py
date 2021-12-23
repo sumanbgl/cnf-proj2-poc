@@ -1,9 +1,11 @@
-from kafka import KafkaConsumer
+from kafka import KafaConsumer
+import json
 
+TOPIC_NAME = 'orders'
 
-TOPIC_NAME = 'items'
+consumer = KakfaConsumer(TOPIC_NAME,
+                        value_deserializer=lambda x: loads(x.decode('utf-8')))
 
-consumer = KafkaConsumer(TOPIC_NAME)
 for message in consumer:
-    text = message.decode('utf-8')
-    print (text)
+    data = message.value
+    print(data)
