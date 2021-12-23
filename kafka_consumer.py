@@ -1,5 +1,5 @@
 from kafka import KafkaConsumer
-import json
+from json import loads
 
 TOPIC_NAME = 'orders'
 
